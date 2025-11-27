@@ -2,7 +2,7 @@
 body { font-family:"Microsoft YaHei",sans-serif; line-height:1.8; transition:all .4s; color:#e0e0e0; background:#0f0f1a; }
 body.light { background:#f8f9fc; color:#222; }
 
-/* 导航栏 */
+/* 导航 */
 .navbar { position:fixed; top:0; left:0; right:0; height:70px; background:rgba(15,15,26,.92); backdrop-filter:blur(16px); display:flex; justify-content:space-between; align-items:center; padding:0 40px; z-index:1000; border-bottom:1px solid rgba(255,255,255,.1); }
 body.light .navbar { background:rgba(255,255,255,.95); border-bottom:1px solid #eee; }
 .nav-left { font-size:1.4rem; font-weight:bold; }
@@ -11,7 +11,7 @@ body.light .navbar { background:rgba(255,255,255,.95); border-bottom:1px solid #
 body.light .nav-right a { color:#333; }
 body.light .nav-right a:hover { background:rgba(0,0,0,.1); }
 
-/* 首页时钟 */
+/* 首页 */
 .home { background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4') center/cover fixed; }
 body.light .home { background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946') center/cover fixed; }
 .clock-container { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-shadow:0 6px 30px rgba(0,0,0,.8); }
@@ -27,7 +27,7 @@ body.light .startpage { background:linear-gradient(135deg,#a8edea,#fed6e3); }
 .card i { font-size:4.2rem; margin-bottom:18px; }
 .card span { font-size:1.25rem; }
 
-/* 关于我 + 笔记 */
+/* 通用内容 */
 .about-content, .notes-container { max-width:900px; margin:120px auto; padding:50px; background:rgba(255,255,255,.08); backdrop-filter:blur(12px); border-radius:20px; border:1px solid rgba(255,255,255,.15); }
 body.light .about-content, body.light .notes-container { background:rgba(255,255,255,.92); border:1px solid #eee; }
 .note-item { padding:22px 30px; margin:16px 0; background:rgba(255,255,255,.08); border-radius:16px; border:1px solid rgba(255,255,255,.12); cursor:pointer; transition:.35s; }

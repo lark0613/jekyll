@@ -1,11 +1,11 @@
 title: Lark 个人主页
 description: 一个正在努力变强的互联网打工人
-baseurl: ""
+baseurl: "/jekyll"  # 子路径，必须是 /jekyll
 url: "https://lark0613.github.io"
 author: Lark
 email: lark_0613@163.com
 
-# 启动台链接（直接改这里加减）
+# 启动台链接
 quick_links:
   - name: Bilibili
     url: https://www.bilibili.com
@@ -29,10 +29,10 @@ quick_links:
     url: https://zh.minecraft.wiki/
     icon: fas fa-cube
 
-# 笔记仓库配置（改成你的）
+# 笔记仓库（你的仓库）
 github_repo: lark0613/jekyll
 
-# 插件（GitHub Pages 支持）
+# 插件（GitHub 支持）
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

@@ -1,4 +1,4 @@
-// 时钟（首页用）
+// 时钟（首页）
 if (document.getElementById('clock')) {
   function updateClock() {
     const now = new Date();
@@ -9,7 +9,7 @@ if (document.getElementById('clock')) {
   updateClock();
 }
 
-// 笔记渲染（笔记页用）
-if (typeof marked !== 'undefined' && document.getElementById('note-list')) {
+// 笔记高亮
+if (typeof hljs !== 'undefined') {
   hljs.highlightAll();
 }

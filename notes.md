@@ -10,7 +10,6 @@ title: 笔记页
 </div>
 
 <script>
-  // 自动读取 notes/ 文件夹（用 GitHub API）
   const repo = "{{ site.github_repo }}";
   fetch(`https://api.github.com/repos/${repo}/contents/notes`)
     .then(r => r.json())
@@ -30,6 +29,7 @@ title: 笔记页
       document.getElementById('note-content').innerHTML = `<button onclick="back()" class="back-btn">返回列表</button><article class="note-article">${marked.parse(md)}</article>`;
       document.getElementById('note-content').style.display = 'block';
       document.getElementById('note-list').style.display = 'none';
+      hljs.highlightAll();
     });
   };
   window.back = () => {
@@ -37,7 +37,6 @@ title: 笔记页
     document.getElementById('note-list').style.display = 'block';
   };
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
