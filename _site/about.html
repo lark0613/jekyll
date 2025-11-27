@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 - Lark 个人主页</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-left">Lark 个人主页</div>
+  <div class="nav-right">
+    <a href="/">首页</a>
+    <a href="/startpage.html">启动台</a>
+    <a href="/about.html">博客</a>
+    <a href="/notes.html">笔记页</a>
+  </div>
+</nav>
+  <div class="about-content">
+  <h1>Hi，我是 Lark</h1>
+  <p><strong>邮箱：</strong><a href="mailto:lark_0613@163.com">lark_0613@163.com</a></p>
+  <p><strong>昵称：</strong>Lark</p>
+  <p><strong>身份：</strong>一个正在努力变强的互联网打工人</p>
+  <p><strong>兴趣：</strong>前端开发、后端学习、Linux 运维、摄影、做饭（川菜爱好者）</p>
+  <p><strong>当前目标：</strong>2026 年成为全栈开发者</p>
+  <p><strong>座右铭：</strong>每多敲一行代码，就离自由近一点</p>
+  <blockquote>欢迎交流，邮件随便轰～</blockquote>
+</div>
+
+  <footer class="footer">
+  <button id="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon" id="theme-icon"></i>
+  </button>
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    document.getElementById('theme-icon').className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  }
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+    document.getElementById('theme-icon').className = 'fas fa-sun';
+  }
+</script>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

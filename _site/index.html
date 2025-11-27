@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 - Lark 个人主页</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-left">Lark 个人主页</div>
+  <div class="nav-right">
+    <a href="/">首页</a>
+    <a href="/startpage.html">启动台</a>
+    <a href="/about.html">博客</a>
+    <a href="/notes.html">笔记页</a>
+  </div>
+</nav>
+  <div class="home">
+  <div class="clock-container">
+    <div class="clock" id="clock"></div>
+    <p id="date"></p>
+  </div>
+</div>
+
+  <footer class="footer">
+  <button id="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon" id="theme-icon"></i>
+  </button>
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    document.getElementById('theme-icon').className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  }
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+    document.getElementById('theme-icon').className = 'fas fa-sun';
+  }
+</script>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
