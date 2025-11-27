@@ -1,0 +1,38 @@
+title: Lark 个人主页
+description: 一个正在努力变强的互联网打工人
+baseurl: ""
+url: "https://lark0613.github.io"
+author: Lark
+email: lark_0613@163.com
+
+# 启动台链接（直接改这里加减）
+quick_links:
+  - name: Bilibili
+    url: https://www.bilibili.com
+    icon: fab fa-bilibili
+  - name: GitHub
+    url: https://github.com
+    icon: fab fa-github
+  - name: YouTube
+    url: https://www.youtube.com
+    icon: fab fa-youtube
+  - name: Grok
+    url: https://grok.com
+    icon: fas fa-robot
+  - name: 努力鸭解析
+    url: https://www.nuliya.top/vip/
+    icon: fas fa-film
+  - name: Cloudflare
+    url: https://dash.cloudflare.com/
+    icon: fas fa-cloud
+  - name: Minecraft Wiki
+    url: https://zh.minecraft.wiki/
+    icon: fas fa-cube
+
+# 笔记仓库配置（改成你的）
+github_repo: lark0613/jekyll
+
+# 插件（GitHub Pages 支持）
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
